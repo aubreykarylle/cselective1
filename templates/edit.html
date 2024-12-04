@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Student Information</h1>
+        <form method="POST">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" value="{{ students['first_name'] }}" required><br>
+
+            <label for="middle_name">Middle Name:</label>
+            <input type="text" name="middle_name" value="{{ students['middle_name'] }}"><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" value="{{ students['last_name'] }}" required><br>
+
+            <label for="gender">Gender:</label>
+            <input type="text" name="gender" value="{{ students['gender'] }}" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" value="{{ students['email'] }}" required><br>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" name="phone_number" value="{{ students['phone_number'] }}" required><br>
+
+            <label for="town_city">Town/City:</label>
+            <input type="text" name="town_city" value="{{ students['town_city'] }}" required><br>
+
+            <label for="country">Country:</label>
+            <input type="text" name="country" value="{{ students['country'] }}" required><br>
+
+            <input type="submit" value="Save Changes">
+        </form>
+    </div>
+</body>
+</html>

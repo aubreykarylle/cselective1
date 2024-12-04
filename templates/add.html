@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Student</h1>
+        <div class="form-container">
+            <form action="{{ url_for('add') }}" method="POST">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="middle_name" placeholder="Middle Name">
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <select name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="phone_number" placeholder="Phone Number">
+                <input type="text" name="town_city" placeholder="Town/City">
+                <input type="text" name="country" placeholder="Country">
+                <button type="submit">Add Student</button>
+            </form>
+            <a href="{{ url_for('index') }}" class="back-link">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

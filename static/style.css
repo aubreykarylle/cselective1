@@ -1,0 +1,205 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #50ADBF; /* Light grayish background */
+    color: #19384A;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Darker shade for the header */
+    font-size: 36px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add Student Button */
+.add-student-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add-student-container a {
+    background-color: #F76168;; /* Blue color */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.add-student-container a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #F76168;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ecf0f1; /* Light gray background for headers */
+    color: #2c3e50;
+}
+
+table tr:hover {
+    background-color: #f9f9f9; /* Slight highlight when hovering over rows */
+}
+
+/* Actions Column */
+.actions {
+    text-align: center;
+}
+
+.actions a {
+    padding: 8px 15px;
+    margin: 0 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Actions Column */
+.actions {
+    text-align: center;
+    padding-top: 10px; /* Add some spacing at the top */
+}
+
+/* Styling for individual action buttons */
+/* Actions Column */
+.actions {
+    text-align: center; /* Center the buttons horizontally by default */
+    padding: 10px 0; /* Add padding around the action buttons container */
+    display: flex;
+    justify-content: center; /* Align the buttons horizontally */
+    gap: 10px; /* Space between the Edit and Delete buttons */
+    flex-wrap: wrap; /* Allow wrapping in case the buttons don't fit on smaller screens */
+}
+
+/* Edit Button Container Adjustment */
+.actions .edit {
+    background-color: #2ecc71; /* Green for Edit */
+    color: white;
+    border: 2px solid #27ae60; /* Border to match edit color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 16px; /* Button font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Edit Button Hover Effect */
+.actions .edit:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3); /* Shadow effect on hover */
+}
+
+/* Additional Styling */
+.actions .delete {
+    background-color: #e74c3c; /* Red for Delete */
+    color: white;
+    border: 2px solid #c0392b; /* Border to match delete color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 16px; /* Button font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Delete Button Hover Effect */
+.actions .delete:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0 4px 8px rgba(192, 57, 43, 0.3); /* Shadow effect on hover */
+}
+
+
+
+/* Form Container Styles */
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input, .form-container select, .form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.form-container input:focus, .form-container select:focus {
+    border-color: #3498db; /* Highlight input fields on focus */
+    outline: none;
+}
+
+.form-container button {
+    background-color: #3498db; /* Blue for buttons */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Back to Home Link */
+.back-link {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-link:hover {
+    color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
